@@ -264,7 +264,6 @@ class plgJ2StorePayment_heartland extends J2StorePaymentPlugin
 					$data ['status'] = ( string ) $response->responseText;
 				}
 			} catch ( HpsException $e ) {
-				die($e->getMessage());
 				$json ['error'] = $e;
 			}
 		}
