@@ -28,8 +28,6 @@
 			<field name="display_name" type="text" size="30" default="" label="j2store_plugin_display_name" description="j2store_plugin_display_name_desc"/>
 			<field name="public_key" type="text" size="50" default="" label="J2STORE_HEARTLAND_PUBLIC_API_KEY" description="J2STORE_HEARTLAND_PUBLIC_API_KEY_DESC"/>
 	 		<field name="secret_key" type="text" size="50" default="" label="J2STORE_HEARTLAND_SECRET_API_KEY" description="J2STORE_HEARTLAND_SECRET_API_KEY_DESC"/>
-	 		<field name="version_number" type="text" size="50" default="" label="J2STORE_HEARTLAND_VESION_NUMBER" description="J2STORE_HEARTLAND_VESION_NUMBER_DESC"/>
-	 		<field name="developer_id" type="text" size="50" default="" label="J2STORE_HEARTLAND_DEVELOPER_ID" description="J2STORE_HEARTLAND_DEVELOPER_ID_DESC"/>
         	
  			<field type="spacer" />
  			

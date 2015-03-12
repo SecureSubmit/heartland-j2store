@@ -195,8 +195,6 @@ class plgJ2StorePayment_heartland extends J2StorePaymentPlugin
 		$app = JFactory::getApplication ();
 		$data = $app->input->getArray ( $_POST );
 		$api_key = $this->_secret_key;
-		$version = $this->params->get ( 'version_number', '' );
-		$developer = $this->params->get ( 'developer_id', '' );
 		// get order data from table using response data
 		$json = array ();
 		if (! JRequest::checkToken ()) {
