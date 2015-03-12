@@ -228,9 +228,9 @@ class plgJ2StorePayment_heartland extends J2StorePaymentPlugin
 			try {
 				// heartland config code
 				$config = new HpsServicesConfig ();
-				$config->secretApiKey = $api_key; // "skapi_cert_MVSPAQDo9VQA9SaIpDmmgG5AVdcqEKGOrEX4Cvl2cQ";
-				$config->versionNumber = '1510'; // this is provided to you during the certification process
-				$config->developerId = '002914'; // this is provided to you during the certification process
+				$config->secretApiKey = $api_key;
+				$config->versionNumber = '1929';
+				$config->developerId = '002914';
 				$chargeService = new HpsCreditService ( $config );
 
 				// add cardholder details
@@ -239,7 +239,7 @@ class plgJ2StorePayment_heartland extends J2StorePaymentPlugin
 				$address->city = html_entity_decode ( $data ['city'], ENT_QUOTES, 'UTF-8' );
 				$address->state = html_entity_decode ( $data ['region'], ENT_QUOTES, 'UTF-8' );
 				$address->country = html_entity_decode ( $data ['country'], ENT_QUOTES, 'UTF-8' );
-				$address->zip = html_entity_decode ( $data ['postal_code'], ENT_QUOTES, 'UTF-8' ); // "750241234";
+				$address->zip = html_entity_decode ( $data ['postal_code'], ENT_QUOTES, 'UTF-8' );
 
 				$cardHolder = new HpsCardHolder ();
 				$cardHolder->firstName = html_entity_decode ( $data ['first_name'], ENT_QUOTES, 'UTF-8' );
