@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="j2store" method="upgrade">
+	<name>PLG_HEARTLANT_PAYMENT</name>
+	<version>1.0</version>
+	<creationDate>JAN 2015</creationDate>
+	<author>Alagesan</author>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<copyright>2014-2019 J2Store . All rights reserved. </copyright>
+	<license>GNU General Public License v2 or later</license>
+	<description>J2STORE_HEARTLAND_PLUGINDESC</description>
+	
+	<files>
+		<filename plugin="payment_heartland">payment_heartland.php</filename>
+		<filename>payment_heartland.xml</filename>
+		<filename>index.php</filename>
+		<folder>payment_heartland</folder>	
+		<folder>library</folder>
+	</files>
+
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_j2store_payment_heartland.ini</language>
+		<language tag="en-GB">en-GB.plg_j2store_payment_heartland.sys.ini</language>
+	</languages>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="display_name" type="text" size="30" default="" label="j2store_plugin_display_name" description="j2store_plugin_display_name_desc"/>
+			<field name="public_key" type="text" size="50" default="" label="J2STORE_HEARTLAND_PUBLIC_API_KEY" description="J2STORE_HEARTLAND_PUBLIC_API_KEY_DESC"/>
+	 		<field name="secret_key" type="text" size="50" default="" label="J2STORE_HEARTLAND_SECRET_API_KEY" description="J2STORE_HEARTLAND_SECRET_API_KEY_DESC"/>
+	 		<field name="version_number" type="text" size="50" default="" label="J2STORE_HEARTLAND_VESION_NUMBER" description="J2STORE_HEARTLAND_VESION_NUMBER_DESC"/>
+	 		<field name="developer_id" type="text" size="50" default="" label="J2STORE_HEARTLAND_DEVELOPER_ID" description="J2STORE_HEARTLAND_DEVELOPER_ID_DESC"/>
+        	
+ 			<field type="spacer" />
+ 			
+ 			<field name="geozone_id" type="geozonelist" default=""	label="J2STORE_GEOZONE" description="J2STORE_GEOZONE_DESC"	addfieldpath="/administrator/components/com_j2store/models/fields"/>
+        	<field name="onselection" type="textarea" cols="10" rows="5" default="J2STORE_HEARTLAND_STANDARD_FORM_MESSAGE" label="j2store_on_selection_label" description="j2store_on_selection_desc"/>
+        	<field name="onbeforepayment" type="textarea" cols="10" rows="5" default="J2STORE_HEARTLAND_STANDARD_PREPARATION_MESSAGE" label="j2store_on_before_payment_label" description="j2store_on_before_payment_desc"/>
+        	<field name="onafterpayment" type="textarea" cols="10" rows="5" default="J2STORE_HEARTLAND_MESSAGE_THANK_ACTION" label="J2STORE_HEARTLAND_MESSAGE_THANK_ACTION_LABEL" description="J2STORE_HEARTLAND_MESSAGE_THANK_ACTION_DESC"/>
+        	<field name="onerrorpayment" type="textarea" cols="10" rows="5" default="J2STORE_HEARTLAND_MESSAGE_INVALID_ACTION" label="j2store_on_error_payment_label" description="j2store_on_error_payment_desc"/>
+        	<field type="spacer" />
+         	<field name="debug" type="radio" default="0" label="J2STORE_HEARTLAND_USE_DEBUG" description="J2STORE_HEARTLAND_USE_DEBUG">
+          		<option value="0">No</option>
+          		<option value="1">YES</option>
+        	</field>
+        	<field name="button_text" type="text" size="50" default="J2STORE_PLACE_ORDER" label="j2store_button_text_label" description="j2store_button_text_desc" />            
+				
+		</fieldset>
+	</fields>
+</config>
+</extension>
