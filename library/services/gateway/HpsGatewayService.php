@@ -126,7 +126,7 @@ class HpsGatewayService {
         if($this->_config->secretApiKey != null && $this->_config->secretApiKey != ''){
             if( strpos($this->_config->secretApiKey, '_cert_') !== false){
                 
-            	return "https://posgateway.cert.secureexchange.net/Hps.Exchange.PosGateway/PosGatewayService.asmx";
+            	return "https://cert.api2.heartlandportico.com/Hps.Exchange.PosGateway/PosGatewayService.asmx";
             }else{
                 return "https://posgateway.secureexchange.net/Hps.Exchange.PosGateway/PosGatewayService.asmx";
             }
