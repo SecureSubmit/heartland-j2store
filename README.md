@@ -1,3 +1,5 @@
+## *** This library is no longer maintained! ***
+
 ## Heartland Plugin for J2Store
 
 Install this plugin to enable secure, credit card payments in your J2Store
